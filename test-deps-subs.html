@@ -1,0 +1,16 @@
+<head>
+  <title>test-deps-subs</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{#each data}}
+  	<div>
+  		<h3>{{name}}</h3>
+  	</div>
+  {{/each}}
+</template>
